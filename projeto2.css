@@ -15,6 +15,12 @@
   background-color: var(--preto);
   
   }
+
+  h1 {
+    color: var(--titulu);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
   
   header{
     background-color: var(--preto);
