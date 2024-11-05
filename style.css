@@ -1,12 +1,12 @@
 
 :root{
-    --fundo:rgb(233, 200, 255);
-    --cor-texto:rgb(88, 0, 105);
+    --fundo:rgb(253, 157, 157);
+    --cor-texto:rgb(107, 25, 5);
     --cor-frente-cartao:pink;
     --cor-verso-cartao: rgb(247, 190, 234); 
-    --preto:black;
+    --preto:#000000;
     --branco:white;
-    --titulu: rgb(225, 191, 238); 
+    --titulu: rgb(253, 182, 51); 
   }
   
   body{
