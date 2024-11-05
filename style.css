@@ -1,0 +1,116 @@
+
+:root{
+    --fundo:rgb(233, 200, 255);
+    --cor-texto:rgb(88, 0, 105);
+    --cor-frente-cartao:pink;
+    --cor-verso-cartao: rgb(247, 190, 234); 
+    --preto:black;
+    --branco:white;
+    --titulu: rgb(225, 191, 238); 
+  }
+  
+  body{
+  background-color: var(--preto);
+  
+  }
+  
+  header{
+    background-color: var(--preto);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header a{
+    color: var(--branco);
+    text-decoration: none;
+  }
+  
+  h1 {
+    color: var(--titulu);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+  }
+  
+  .cartao {
+    margin: 1rem 1rem;
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+  }
+  
+  .cartao-conteudo {
+  
+    background-color: var(--fundo);
+    text-align: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    border-radius: 30px;
+  }
+  
+  .cartao-conteudo h3{
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-texto);
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.5rem;
+    border-radius: 0.6rem;
+    font-size: 1.4vw;
+    backface-visibility: hidden;
+  }
+  
+  .cartao-conteudo p{
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 1.4vw;
+  }
+  
+  .cartao-pergunta p{
+    color: var(--cor-texto);
+    font-weight: 500;
+  }
+  
+  .cartao-resposta p{
+    color: var(--cor-texto);
+    font-weight: 700;
+  }
+  
+  .cartao.active .cartao-conteudo {
+    transform: rotateY(180deg);
+  }
+  
+  .cartao-resposta {
+    transform: rotateY(180deg);
+    background-color: var(--cor-verso-cartao);
+    border-radius: 30px;
+  }
+  
+  .cartao-pergunta,
+  .cartao-resposta {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  
+  }
+  
+  footer{
+      background-color:var(--branco);
+      color:var(--cor-frente-cartao);
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  
