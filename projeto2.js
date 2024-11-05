@@ -1,6 +1,3 @@
-
-
-
 function criarCartas(categoria, perguntas, respostas) {
     let container = document.getElementById('container');
     let cartao = document.createElement('article');
